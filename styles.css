@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-gryish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-cyan);
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    width: 40%;
+    min-width: 300px;
+    max-width: 25rem;
+}
+
+.wrapper {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.top-background {
+    border: solid 1 px black;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 4rem
+}
+
+.top-background img {
+    width: 100%;
+    display: block;
+}
+
+.profile-picture {
+    max-width: 100%;
+    border: solid 0.2rem white;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    /* bottom: 3rem; */
+    top: 40vh;
+
+}
+
+.profile-picture img {
+    max-width: 100%;
+    display: block;
+}
+
+
+section h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);                                                                          
+}
+
+section p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--dark-gray);
+}
+
+.divider {
+    width: 100%;
+    border: 1px solid var(--dark-gray);
+    opacity: 0.15;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: clamp(1rem, 0.714rem + 1.607vw, 2rem);
+    padding-left: clamp(1rem, 0.714rem + 1.607vw, 2rem);
+    text-align: center;
+}
+
+.stats-count {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.description {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.8rem; 
+    letter-spacing: 1px;
+}
+
+
+
+h1, .age {
+    display: inline-block;
+}
+
+.age {
+    font-size: 1.4rem
+}
+
+h1 {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem
+}
+
+.Location {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
